@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'gradientC.dart';
 
 void main() {
   runApp(
@@ -10,26 +11,6 @@ void main() {
   );
 }
 
-class GradientC extends StatelessWidget {
-  const GradientC({super.key});
-
-  @override
-  Widget build(context) {
-    return Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(colors: [
-            Color.fromARGB(255, 167, 61, 61),
-            Color.fromARGB(255, 71, 8, 8)
-          ]),
-        ),
-        child: const Center(
-          child: Text(
-            'Hell3o',
-            style: TextStyle(color: Colors.blue),
-          ),
-        ));
-  }
-}
 
 /*
 import 'package:flutter/material.dart';
