@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'styledText.dart';
 
 class GradientC extends StatelessWidget {
-  const GradientC(this.text, {super.key});
+  GradientC({super.key});
 
-  String text;
   @override
   Widget build(context) {
     return Container(
@@ -13,11 +13,6 @@ class GradientC extends StatelessWidget {
             Color.fromARGB(255, 71, 8, 8)
           ]),
         ),
-        child: const Center(
-          child: Text(
-            text,
-            style: TextStyle(color: Colors.blue),
-          ),
-        ));
+        child: StyledText("00HALLOOOO")); //const Center(child: Text("gklf1")));
   }
 }

@@ -3,7 +3,7 @@ import 'gradientC.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
         body: GradientC(),
       ),
