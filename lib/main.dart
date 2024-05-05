@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         body: GradientC(),
       ),
@@ -11,6 +11,8 @@ void main() {
 }
 
 class GradientC extends StatelessWidget {
+  const GradientC({super.key});
+
   @override
   Widget build(context) {
     return Container(
@@ -22,7 +24,7 @@ class GradientC extends StatelessWidget {
         ),
         child: const Center(
           child: Text(
-            'Hello',
+            'Hell3o',
             style: TextStyle(color: Colors.blue),
           ),
         ));
