@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'styledText.dart';
 
 class GradientC extends StatelessWidget {
-  GradientC({super.key});
+  const GradientC({super.key});
 
   @override
   Widget build(context) {
