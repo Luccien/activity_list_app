@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 //import 'styledText.dart';
+import 'diceRoller.dart';
 
 class GradientC extends StatelessWidget {
   const GradientC({super.key});
-
-  void rollDice() {}
 
   @override
   Widget build(context) {
@@ -15,7 +14,9 @@ class GradientC extends StatelessWidget {
           Color.fromARGB(255, 71, 8, 8)
         ]),
       ),
-      child: Center(
+      child: Center(child: DiceRoller()
+          //--------------------------------
+          /*
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -36,7 +37,9 @@ class GradientC extends StatelessWidget {
             )
           ],
         ),
-      ),
+*/
+          //--------------------------------
+          ),
     );
     //StyledText("00HALLOOOO")); //const Center(child: Text("gklf1")));
   }
