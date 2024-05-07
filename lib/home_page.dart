@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
 import 'alligator_model.dart';
 
-
-
-
-
-
-
 class MyHomePage extends StatefulWidget {
   MyHomePage({required Key key}) : super(key: key);
 
@@ -39,17 +33,16 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
           children: alligators
               .map((Alligator alligator) => Card(
-            child: Column(
-              children: <Widget>[
-                ListTile(
-                  title: Text(alligator.name),
-                  subtitle: Text(alligator.description),
-                ),
-              ],
-            ),
-          ))
-              .toList()
-      ),
+                    child: Column(
+                      children: <Widget>[
+                        ListTile(
+                          title: Text(alligator.name),
+                          subtitle: Text(alligator.description),
+                        ),
+                      ],
+                    ),
+                  ))
+              .toList()),
     );
   }
 }

@@ -1,4 +1,22 @@
 import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/': (context) => CreateUserScreen(),
+        '/login': (context) => LoginScreen(),
+        '/logout': (context) => LogoutScreen(),
+      },
+    ),
+  );
+}
+
+
+
+/*
+import 'package:flutter/material.dart';
 import 'gradientC.dart';
 
 void main() {
@@ -10,7 +28,7 @@ void main() {
     ),
   );
 }
-
+*/
 
 /*
 import 'package:flutter/material.dart';
